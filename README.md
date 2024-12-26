@@ -1,2 +1,2 @@
-# МОЩНЫ ПРОЭКТ
-У нево ест поле для ввод и болше нечево. Но ему болше и не надо
+## MIGTY PROJEC
+IT HAS FIELD AND NOTHING. BUT IT IS COOL, 'CAUSE IT MIGTY PROJEC
