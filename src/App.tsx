@@ -1,15 +1,15 @@
-import CardList from './components/CardList';
-import Footer from './components/Footer';
-import Header from './components/Header';
+import CardList from "./components/card-list";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 
-function App() {
+const App = () => {
   return (
-    <section className="relative pt-[150px] flex flex-col items-center">
-      <Header/>
-      <CardList/>
-      <Footer/>
+    <section className="relative pt-[150px] flex flex-col items-center font-mono">
+      <Header />
+      <CardList />
+      <Footer />
     </section>
-  )
-}
+  );
+};
 
-export default App
+export default App;

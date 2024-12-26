@@ -1,15 +1,19 @@
-interface TooltipProps {
-    visibleText: string;
+import { ReactNode } from "react";
+import '../Tooltip.css';
+
+type TooltipProps = {
+    children: ReactNode;
     tooltipText: string;
 }
 
-const Tooltip: React.FC<TooltipProps> = ({visibleText, tooltipText}) => {
+const Tooltip = ({children, tooltipText}: TooltipProps) => {
     return(    
-    <div className="relative group w-[300px] md:w-[575px]">
-        <span className="text-gray-800 font-bold text-[14px] md:text-[20px]">{visibleText}</span>
-        <div className="absolute transform -translate-x-1 bottom-1/2 mb-2 hidden group-hover:block p-2 text-white bg-blue-700/70 rounded text-[8px] md:text-[14px]">
+    <div className="tooltip-container w-[300px] md:w-[575px]">
+        {children}
+        <div className="tooltip">
           {tooltipText}
         </div>
-    </div>)
-}
+    </div>
+    );
+};
 export default Tooltip
