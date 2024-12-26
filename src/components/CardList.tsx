@@ -19,7 +19,7 @@ const CardList = () => {
             {error instanceof Error && <p className="text-[14px] md:text-[20px]">Error: {error.message}</p>}
             {!isLoading && data && data.length === 0 && <p className="text-[14px] md:text-[20px]">No data found</p>}
             {data && data.length > 0 && (
-                <div>
+                <div className="flex flex-col gap-3 items-center md:gap-6">
                     {data.map(card => (
                         <ObjectCard
                             object={card}
