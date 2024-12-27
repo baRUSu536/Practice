@@ -1,6 +1,6 @@
 import CardList from "./components/card-list";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
+import Footer from "./components/footer";
+import Header from "./components/header";
 
 const App = () => {
   return (
